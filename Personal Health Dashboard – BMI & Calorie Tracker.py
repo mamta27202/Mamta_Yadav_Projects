@@ -1,36 +1,3 @@
-
-# ###  **Slide 1: Project Title**
-# **Title:**
-#  *Personal Health Dashboard*
-# **Tech Stack:** Python, Tkinter
-
-# ###  **Slide 2: Objective**
-# * Develop a **user-friendly GUI tool**
-# * Help users calculate:
-#   *  **Body Mass Index (BMI)**
-#   *  **Estimated Daily Calorie Needs**
-
-# ###  **Slide 3: Features**
-# *  BMI calculation with WHO classification
-# *  Calorie requirement based on:
-#   * Age
-#   * Gender
-#   * Activity level
-# * Tkinter-based clean GUI interface
-
-# ###  **Slide 4: Tools & Libraries**
-# *  **Python**
-# *  **Tkinter** (for GUI)
-# *  Basic logic, no external API needed
-
-# ###  **Slide 5: Learning Outcome**
-# * Improved understanding of:
-
-#   * GUI design in Python
-#   * User input handling
-#   * Health metric logic
-# * Great beginner project for resumes & portfolios
-
 import tkinter as tk
 from tkinter import messagebox
 
@@ -86,7 +53,6 @@ def calculate_calories():
     except ValueError:
         messagebox.showerror("Input Error", "Please enter valid numbers.")
 
-# ---------------- GUI ----------------
 root = tk.Tk()
 root.title("Personal Health Dashboard")
 root.geometry("400x500")
