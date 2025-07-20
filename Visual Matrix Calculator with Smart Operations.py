@@ -1,28 +1,3 @@
-# Slide Title: Matrix Calculator – Python GUI Project**
-# ###  **Project Overview**
-# A desktop application to perform key matrix operations using a graphical interface.
-# ###  **Technologies Used**
-# * Python
-# * Tkinter (GUI)
-# * NumPy (Matrix Calculations)
-# ###  **Key Features**
-
-# * Matrix Addition & Subtraction
-# * User-friendly Entry Fields
-# * Real-time Result Display
-# * Error Handling for Invalid Input
-
-# ###  **What I Learned**
-
-# * GUI development with Tkinter
-# * Matrix handling using NumPy
-# * Error handling and user validation
-# * Real-world use of scientific computing
-
-# ###  **Use Case**
-
-# Useful for students, teachers, or engineers needing quick and reliable matrix computations without coding.
-
 import tkinter as tk
 from tkinter import messagebox
 import numpy as np
@@ -41,7 +16,6 @@ matrix_frame2.pack(pady=10)
 result_frame = tk.Frame(root)
 result_frame.pack(pady=10)
 
-# Create matrix input fields
 def create_matrix_input(rows, cols, frame):
     entries = []
     for i in range(rows):
@@ -53,11 +27,9 @@ def create_matrix_input(rows, cols, frame):
         entries.append(row_entries)
     return entries
 
-# Define matrices
 matrix1_entries = create_matrix_input(2, 2, matrix_frame1)
 matrix2_entries = create_matrix_input(2, 2, matrix_frame2)
 
-# Read matrix from input fields
 def read_matrix(entries):
     matrix = []
     for row in entries:
@@ -70,7 +42,6 @@ def read_matrix(entries):
         matrix.append(row_values)
     return np.array(matrix)
 
-# Display result in GUI
 def display_result(matrix):
     for widget in result_frame.winfo_children():
         widget.destroy()
